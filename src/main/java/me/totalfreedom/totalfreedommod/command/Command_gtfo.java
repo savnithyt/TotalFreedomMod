@@ -53,7 +53,7 @@ public class Command_gtfo extends FreedomCommand
         }
 
         // Rollback
-        plugin.rb.rollback(player.getName());
+        server.dispatchCommand(sender, "co rb u:" + player.getName() + " t:24h r:global #silent");
 
         // Deop
         player.setOp(false);
